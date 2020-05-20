@@ -17,7 +17,7 @@ print(id(y[1]))
 print(id(x[2]))
 print(id(y[2]))
 
-if x[0] is y[0]:
+if x[0] is y[0]:  # For objects that are not mutable, such as ints and strings, we can optimise using the same object
     print('They are exactly the same object')
 
 if isinstance(x, tuple):
