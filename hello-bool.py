@@ -33,6 +33,34 @@ if x:
 else:
     print('False')
 
+print('Boolean operators')
+a = True
+b = False
+x = ('bear', 'bunny', 'tree', 'sky', 'rain')
+y = 'bear'
+
+print('And operator')
+if a and b:
+    print('expression is true')
+else:
+    print('expression is false')
+
+print('Not operator')
+if not a:
+    print('expression is true')
+else:
+    print('expression is false')
+if not b:
+    print('expression is true')
+else:
+    print('expression is false')
+
+print('In operator')
+if y in x:
+    print('expression is true')
+else:
+    print('expression is false')
+
 # CONSOLE OUTPUT:
 # True
 # x is <class 'bool'>
@@ -47,3 +75,12 @@ else:
 #
 # x is <class 'str'>
 # False
+# Boolean operators
+# And operator
+# expression is false
+# Not operator
+# expression is false
+# expression is true
+# In operator
+# expression is true
+
