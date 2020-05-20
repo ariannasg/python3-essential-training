@@ -20,6 +20,7 @@ x = a + a + a - b
 print(x)  # 0.00
 print(type(x))
 
+# CONSOLE OUTPUT:
 # 7
 # x is type <class 'int'>
 # 2.3333333333333335

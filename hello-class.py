@@ -20,3 +20,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# CONSOLE OUTPUT:
+# Quaaack!
+# Walking like a duck.

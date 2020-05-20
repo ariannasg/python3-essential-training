@@ -35,7 +35,7 @@ zb = 9
 z = f'seven "{za:<09}" "{zb:>09}"'
 print(z)  # seven "900000000" "000000008"
 
-
+# CONSOLE OUTPUT:
 # seven
 # z is <class 'str'>
 # strings are objects

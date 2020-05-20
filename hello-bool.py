@@ -32,3 +32,18 @@ if x:
     print('True')
 else:
     print('False')
+
+# CONSOLE OUTPUT:
+# True
+# x is <class 'bool'>
+# False
+# <class 'bool'>
+# None
+# x is <class 'NoneType'>
+# False
+# 0
+# x is <class 'int'>
+# False
+#
+# x is <class 'str'>
+# False

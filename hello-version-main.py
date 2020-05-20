@@ -13,3 +13,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# CONSOLE OUTPUT:
+# This is python version 3.8.3

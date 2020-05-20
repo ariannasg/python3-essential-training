@@ -12,3 +12,14 @@ while n < 3:
 print('Printing elements in words using a for loop:')
 for i in words:
     print(i)
+
+# CONSOLE OUTPUT:
+# The words array has 3 elements
+# Printing elements in words using a while loop:
+# Hello
+# World
+# !
+# Printing elements in words using a for loop:
+# Hello
+# World
+# !
