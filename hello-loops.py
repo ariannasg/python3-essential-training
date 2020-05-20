@@ -16,8 +16,21 @@ for i in words:
 print('Trying a while loop using the console input')
 secret = 'swordfish'
 pw = ''
+auth = False
+count = 0
+max_attempt = 5
+
 while pw != secret:
-    pw = input("What's the secret word? ")
+    count += 1
+    if count > max_attempt:
+        break
+    if count == 3:
+        continue
+    pw = input(f"{count}: What's the secret word? ")
+else:
+    auth = True
+
+print('Authorised' if auth else 'Calling the FBI ...')
 
 # CONSOLE OUTPUT:
 # The words array has 3 elements
@@ -30,6 +43,15 @@ while pw != secret:
 # World
 # !
 # Trying a while loop using the console input
-# What's the secret word? dunno
-# What's the secret word? maybeispwd
-# What's the secret word? swordfish
+# 1: What's the secret word? x
+# 2: What's the secret word? y
+# 4: What's the secret word? a
+# 5: What's the secret word? x
+# Calling the FBI ...
+
+# Trying a while loop using the console input
+# 1: What's the secret word? x
+# 2: What's the secret word?
+# 4: What's the secret word? a
+# 5: What's the secret word? swordfish
+# Authorised
