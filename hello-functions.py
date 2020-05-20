@@ -7,6 +7,7 @@ def function(n=1):
 
 function()  # prints 1
 function(42)  # prints 42
+# In python there is no difference between a function and a procedure, all functions return values
 print(function())  # prints None
 print('---\t')
 
