@@ -30,8 +30,8 @@ This course takes developers from writing their first unit test in PHPUnit to im
 
 ## Local setup
 Follow the instructions to get the project up and running for local development and testing purposes.
-- Install python 3. 
-- Configure the IDE Interpreter to use python 3.
+- Install python 3: https://www.python.org/downloads/. 
+- Configure the IDE Interpreter to use python 3 and setup the run configuration: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html?keymap=secondary_macos.
 
 ### License
 This project is licensed under the terms of the MIT License.
