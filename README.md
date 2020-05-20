@@ -31,7 +31,7 @@ Follow the instructions to get the project up and running for local development 
 - Install python 3: https://www.python.org/downloads/. 
 - Configure the IDE Interpreter to use python 3 and setup the run configuration: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html?keymap=secondary_macos.
 
-### License
+## License
 This project is licensed under the terms of the MIT License.
 Please see [LICENSE](LICENSE.md) for details.
 
