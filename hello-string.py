@@ -1,6 +1,7 @@
 #! usr/bin/env python3
 
 # Str is a fundamental built-in type (all types are classes). Everything is an object in Python 3.
+# Strings are immutable in python
 z = 'seven'
 print(z)
 print('z is {}'.format(type(z)))
@@ -35,6 +36,19 @@ zb = 9
 z = f'seven "{za:<09}" "{zb:>09}"'
 print(z)  # seven "900000000" "000000008"
 
+x = 42 * 74718
+print('the number is "{}"'.format(x))
+print('the number is "{:,}"'.format(x))  # format with commas for thousand separation
+print('the number is "{:,}"'.format(x).replace(',', '.'))
+print('the number is "{:f}"'.format(x))  # show decimal places
+print('the number is "{:.3f}"'.format(x))  # show just 3 decimal places
+print(f'the number is "{x:.3f}"')
+print('the number is "{:,.2f}"'.format(x))  # format with commas and also show 2 decimal places
+print(f'the number is "{x:,.2f}"')
+print('the hex of 10 is "{:x}"'.format(10))  # put it in hexadecimal
+print('the octal of 10 is "{:o}"'.format(10))  # put it in octal
+print('the binary of 10 is "{:b}"'.format(10))  # put it in binary
+
 
 class ReverseString(str):
     def __str__(self):
@@ -45,10 +59,36 @@ print()
 hello = ReverseString('Hello World')
 print(hello)
 
+print('\nCommon string object methods')
+print('Hello, World.'.upper())
+print('Hello, World.'.capitalize())
+print('Hello, World.'.title())
+print('Hello, World.'.swapcase())
+print('Hello, World. ß'.lower())
+print('Hello, World ß.'.casefold())  # similar to lower case but removes all case distinctions in unicode
+print()
+s1 = 'Hello, World.'
+s2 = s1.upper()
+print(id(s1))
+print(id(s2))
+print('\nconcatenation')
+s3 = 'Another string'
+print(s1 + s3)
+print('one string ' 'and another string')
+
+print("\nSplitting and joining")
+x = 'This is a string with a bunch of words in it'
+print(x.split())
+print(x.split('i'))
+s = x.split()
+s2 = ':'.join(s)
+print(s2)
+print(x.replace(' ', ':'))
+
 # CONSOLE OUTPUT:
 # seven
 # z is <class 'str'>
-# strings are objects
+# strings are objects so we can use their functions
 # SEVEN
 # can have multi-line strings
 #
@@ -61,5 +101,37 @@ print(hello)
 # seven "9        " "        8"
 # seven "900000000" "000000008"
 # seven "800000000" "000000009"
+# the number is "3138156"
+# the number is "3,138,156"
+# the number is "3.138.156"
+# the number is "3138156.000000"
+# the number is "3138156.000"
+# the number is "3138156.000"
+# the number is "3,138,156.00"
+# the number is "3,138,156.00"
+# the hex of 10 is "a"
+# the octal of 10 is "12"
+# the binary of 10 is "1010"
 #
 # dlroW olleH
+#
+# Common string object methods
+# HELLO, WORLD.
+# Hello, world.
+# Hello, World.
+# hELLO, wORLD.
+# hello, world. ß
+# hello, world ss.
+#
+# 4400069488
+# 4400153904
+#
+# concatenation
+# Hello, World.Another string
+# one string and another string
+#
+# Splitting and joining
+# ['This', 'is', 'a', 'string', 'with', 'a', 'bunch', 'of', 'words', 'in', 'it']
+# ['Th', 's ', 's a str', 'ng w', 'th a bunch of words ', 'n ', 't']
+# This:is:a:string:with:a:bunch:of:words:in:it
+# This:is:a:string:with:a:bunch:of:words:in:it
