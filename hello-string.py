@@ -85,6 +85,29 @@ s2 = ':'.join(s)
 print(s2)
 print(x.replace(' ', ':'))
 
+print("\nSome string built-in functions")
+s = 'Hello World'
+print(repr(s))  # prints the best possible string representation of an object
+
+
+class Bunny:
+    def __init__(self, n):
+        self._n = n
+
+    def __repr__(self):
+        return f'The number of bunnies is: {self._n} 🖖'
+
+    def __str__(self):
+        return f'Number of bunnies: {self._n}'
+
+
+x = Bunny(3)
+print(repr(x))
+print(x)
+print(ascii(x))  # works just like repr but escaping chars
+print(ord('🖖'))  # the opposite of chr - gives the number of a character
+print(chr(128406))  # this function prints the character represented by that unicode precision
+
 # CONSOLE OUTPUT:
 # seven
 # z is <class 'str'>
@@ -135,3 +158,11 @@ print(x.replace(' ', ':'))
 # ['Th', 's ', 's a str', 'ng w', 'th a bunch of words ', 'n ', 't']
 # This:is:a:string:with:a:bunch:of:words:in:it
 # This:is:a:string:with:a:bunch:of:words:in:it
+#
+# Some string built-in functions
+# 'Hello World'
+# The number of bunnies is: 3 🖖
+# Number of bunnies: 3
+# The number of bunnies is: 3 \U0001f596
+# 128406
+# 🖖
