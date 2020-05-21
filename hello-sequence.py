@@ -99,6 +99,30 @@ print(a | b)  # it will print diff order or all elements that are either in a, o
 print(a ^ b)  # it will print diff order or all elements that are in a or b but not both (exclusive or)
 print(a & b)  # it will print diff order or all elements that are in both a and b
 
+print('Container/collection functions')
+x = (1, 2, 3, 4, 5)
+y = list(reversed(x))
+print(x)
+print(y)
+print(sum(x))
+print(sum(x, 10))  # start in 10 and then add elements in x
+print(max(x))
+print(min(x))
+print(any(x))  # returns true if any element is true
+print(any((0, 0, 0, 0)))
+print(all(x))  # returns true if all elements are true
+print(all((0, 1, 1, 0)))
+y = (6, 7, 8, 9, 10, 11, 12)
+z = zip(x, y)  # return tuples of elements in both iterators
+print(z)
+for i in z:
+    print(i, end=' ')
+print()
+x = ('cat', 'dog', 'rabbit', 'duck')
+print(x)
+for i, v in enumerate(x):
+    print(f'i:{i}, v:{v}')
+
 # CONSOLE OUTPUT:
 # i is 1
 # i is 2
@@ -203,3 +227,21 @@ print(a & b)  # it will print diff order or all elements that are in both a and 
 # {'e', 'J', 'l', 'n', ' ', 't', 'o', 'K', 'H', 'a', 'h'}
 # {'J', 'n', 't', 'a', 'K', 'h'}
 # {'e', 'l', ' ', 'o', 'H'}
+# Container/collection functions
+# (1, 2, 3, 4, 5)
+# [5, 4, 3, 2, 1]
+# 15
+# 25
+# 5
+# 1
+# True
+# False
+# True
+# False
+# <zip object at 0x10a7eed80>
+# (1, 6) (2, 7) (3, 8) (4, 9) (5, 10)
+# ('cat', 'dog', 'rabbit', 'duck')
+# i:0, v:cat
+# i:1, v:dog
+# i:2, v:rabbit
+# i:3, v:duck
