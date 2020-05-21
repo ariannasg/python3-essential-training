@@ -2,17 +2,40 @@
 
 # Sequences are lists, tuples and dictionaries. They are fundamental built-in types (all types are classes).
 # Everything is an object in Python 3.
+# Try to use tuples instead of lists, unless you know the object will change.
 
 x = [1, 2, 3, 4, 5]
 for i in x:
     print('i is {}'.format(i))
+print('Lists operations')
+game = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+print(game[1])
+print(game[1:5], end=' ', flush=True)  # works like range()
+print()
+print(game[1:5:2], end=' ', flush=True)  # works like range()
+print()
+i = game.index('Paper')
+print(game[i])
+game.append('New Item')
+print(game)
+game.insert(0, 'New Item at the beginning')
+print(game)
+i = game.pop()  # remove by default last index and return it
+print(i)
+print(game)
+del game[0]
+print(game)
+del game[0:3:2]  # works like range()
+print(game)
+print(', '.join(game))
+print(len(game))
 
 print('Lists are mutable')
 x[2] = 42
 for i in x:
     print('i is {}'.format(i))
 
-print('''Tuples are immutable, if I try reassigning a value I will get an error. 
+print('''Tuples work like lists but they are immutable, if I try reassigning a value I will get an error. 
 Try to use tuples by default unless I know I need to change a value at some point''')
 x = (1, 2, 3, 4, 5)
 for i in x:
@@ -48,12 +71,53 @@ x['three'] = 42
 for key, value in x.items():
     print('k: {}, v: {}'.format(key, value))
 
+print('Dictionaries operations')
+animals = dict(kitten='meow', puppy='ruff!', lion='grrr', giraffe='I am a giraffe!', dragon='rawr')
+for k, v in animals.items():
+    print(f'key: {k}, value: {v}')
+for k in animals.keys():
+    print(k)
+for v in animals.values():
+    print(v)
+animals['lion'] = 'I am a lion'
+print(animals)
+animals['monkey'] = 'I am a monkey'
+print(animals)
+print('lion found' if 'lion' in animals else 'lion not found')
+print('godzilla found' if 'godzilla' in animals else 'godzilla not found')
+print(animals.get('godzilla'))
+
+print('Sets are like lists that do not allow duplicate elements')
+a = set("Hello John")
+b = set("Hello Kate")
+print(a)  # it comes at a different order each time I run it
+print(b)  # it comes at a different order each time I run it
+print(sorted(a))  # it will always print the same order
+print(sorted(b))  # it will always print the same order
+print(a - b)  # it will print diff order or elements that are in a but not in b
+print(a | b)  # it will print diff order or all elements that are either in a, or b or in both (inclusive or)
+print(a ^ b)  # it will print diff order or all elements that are in a or b but not both (exclusive or)
+print(a & b)  # it will print diff order or all elements that are in both a and b
+
 # CONSOLE OUTPUT:
 # i is 1
 # i is 2
 # i is 3
 # i is 4
 # i is 5
+# Lists operations
+# Paper
+# ['Paper', 'Scissors', 'Lizard', 'Spock']
+# ['Paper', 'Lizard']
+# Paper
+# ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock', 'New Item']
+# ['New Item at the beginning', 'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock', 'New Item']
+# New Item
+# ['New Item at the beginning', 'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+# ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+# ['Paper', 'Lizard', 'Spock']
+# Paper, Lizard, Spock
+# 3
 # Lists are mutable
 # i is 1
 # i is 2
@@ -109,3 +173,33 @@ for key, value in x.items():
 # k: three, v: 42
 # k: four, v: 4
 # k: five, v: 5
+# Dictionaries operations
+# key: kitten, value: meow
+# key: puppy, value: ruff!
+# key: lion, value: grrr
+# key: giraffe, value: I am a giraffe!
+# key: dragon, value: rawr
+# kitten
+# puppy
+# lion
+# giraffe
+# dragon
+# meow
+# ruff!
+# grrr
+# I am a giraffe!
+# rawr
+# {'kitten': 'meow', 'puppy': 'ruff!', 'lion': 'I am a lion', 'giraffe': 'I am a giraffe!', 'dragon': 'rawr'}
+# {'kitten': 'meow', 'puppy': 'ruff!', 'lion': 'I am a lion', 'giraffe': 'I am a giraffe!', 'dragon': 'rawr', 'monkey': 'I am a monkey'}
+# lion found
+# godzilla not found
+# None
+# Sets are like lists that do not allow duplicate elements
+# {'e', 'J', 'l', 'n', ' ', 'o', 'H', 'h'}
+# {'e', 'l', ' ', 't', 'a', 'o', 'H', 'K'}
+# [' ', 'H', 'J', 'e', 'h', 'l', 'n', 'o']
+# [' ', 'H', 'K', 'a', 'e', 'l', 'o', 't']
+# {'n', 'J', 'h'}
+# {'e', 'J', 'l', 'n', ' ', 't', 'o', 'K', 'H', 'a', 'h'}
+# {'J', 'n', 't', 'a', 'K', 'h'}
+# {'e', 'l', ' ', 'o', 'H'}
