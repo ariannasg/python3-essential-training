@@ -35,6 +35,16 @@ zb = 9
 z = f'seven "{za:<09}" "{zb:>09}"'
 print(z)  # seven "900000000" "000000008"
 
+
+class ReverseString(str):
+    def __str__(self):
+        return self[::-1]
+
+
+print()
+hello = ReverseString('Hello World')
+print(hello)
+
 # CONSOLE OUTPUT:
 # seven
 # z is <class 'str'>
@@ -51,3 +61,5 @@ print(z)  # seven "900000000" "000000008"
 # seven "9        " "        8"
 # seven "900000000" "000000008"
 # seven "800000000" "000000009"
+#
+# dlroW olleH
