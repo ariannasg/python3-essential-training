@@ -1,18 +1,23 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
-# Python 3 Essential Training
+# Python 3 Training
 
 * [Description](#description)
-* [Objectives](#objectives)
+* [Python 3 Essentials](#python-3---essentials)
 * [Local setup](#local-setup)
 * [License](#license)
 
 ## Description
+Follow a series of courses to train and improve python skills.
+
+### Python 3 - Essentials
 https://www.linkedin.com/learning/python-essential-training-2/
+
+The code for this codes lives on the [essentials folder](./essentials).
 
 This course covers the basics of the language syntax and usage, as well as advanced features such as objects, generators, and exceptions. Learn how types and values are related to objects; how to use control statements, loops, and functions; and how to work with generators and decorators.
 
-## Objectives
+##### Objectives
 - Python anatomy
 - Types and values
 - Conditionals and operators
@@ -34,5 +39,3 @@ Follow the instructions to get the project up and running for local development 
 ## License
 This project is licensed under the terms of the MIT License.
 Please see [LICENSE](LICENSE.md) for details.
-
-
