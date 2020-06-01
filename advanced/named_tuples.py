@@ -9,7 +9,8 @@ import collections
 # and such, so if the data that we're working with has a large number of
 # optional properties it might be better to just go with a regular class.
 # the point example is a perfect example of when to use them, since it's much
-# simpler and readable to use namedtuples than to create a Point class
+# simpler and readable to use namedtuples than to create a Point class.
+# namedtuple objects are essentially Python classes but simpler
 def main():
     # create a Point namedtuple
     point = collections.namedtuple('Point', 'x y')

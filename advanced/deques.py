@@ -16,7 +16,9 @@ from collections import deque
 # while negative numbers will rotate to the left.
 # use a deqye if you have a use case where you need to be able to operate on
 # both ends of a list and perform operations such as this rotation,
-# i.e: a restaurant sign-up list might have such a need
+# i.e: a restaurant sign-up list might have such a need.
+# one of the main advantages of using a deque over a regular stack or queue is
+# that a deque is memory efficient for operations on both ends.
 def main():
     # initialize a deque with lowercase letters
     d = deque(string.ascii_lowercase)
