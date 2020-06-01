@@ -1,0 +1,3 @@
+[06/01/2020 02:18:55 PM] INFO This is an info-level log message STACKTRACE: main:20 USER:ari@example.com
+[06/01/2020 02:18:55 PM] WARNING This is a warning-level message STACKTRACE: main:21 USER:ari@example.com
+[06/01/2020 02:18:55 PM] DEBUG This is a debug-level log message STACKTRACE: another_function:26 USER:ari@example.com
