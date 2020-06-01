@@ -45,4 +45,12 @@ if __name__ == "__main__":
     main()
 
 # CONSOLE OUTPUT:
-
+# Fruit.APPLE
+# <enum 'Fruit'>
+# Fruit.APPLE
+# <Fruit.APPLE: 1>
+# APPLE
+# 1
+# PEAR
+# 5
+# Come Mr. Tally-man
