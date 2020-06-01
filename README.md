@@ -42,11 +42,12 @@ also shows how to manipulate data, build custom classes and functions, create li
 
 #### Objectives
 - Truth value testing
-- Template strings
-- Iterators
-- Transforms
-- Advanced Python functions
-- Advanced collections
+- Template strings for string formatting
+- Generic built-ins: any, all, sum, min, max
+- Iterators: next, iter, enumerate, zip, itertools
+- Transforms: sorted, filter, map
+- Advanced Python functions: docstrings, variable argument lists, lambdas, keyword-only arguments
+- Advanced collections: namedtuple, defaultdict, Counter, OrderedDict, deque
 - Advanced classes and objects
 - Logging
 - Python comprehensions: list, dictionary, and set
