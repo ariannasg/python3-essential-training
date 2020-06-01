@@ -63,9 +63,10 @@ See how the library can help to work with numbers, calculate and format dates an
 
 #### Objectives
 - Basic string operations
-- Searching strings
-- Manipulating data
-- Using efficient arrays
+- Searching strings with str functions
+- Manipulating data with str functions, justifications, etc
+- Sorting with key parameters, functions from the operator module, etc
+- Using efficient arrays for enforcing the type rules of a given data set
 - Creating temporary files and directories
 - Reading and writing CSV and ZIP files
 - Generating unique identifiers
