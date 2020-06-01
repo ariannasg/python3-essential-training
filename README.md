@@ -56,7 +56,7 @@ Also shows how to manipulate data, build custom classes and functions, create li
 ## Python Standard Library Essential Training
 https://www.linkedin.com/learning/python-standard-library-essential-training/
 
-The code for this codes lives on the [standard-library folder](./standard_library).
+The code for this codes lives on the [standard_library folder](./standard_library).
 
 Understand more about the library of pre-built code — known as the Python standard library — that’s distributed along with the language.
 See how the library can help to work with numbers, calculate and format dates and times, parse HTML, and more.
