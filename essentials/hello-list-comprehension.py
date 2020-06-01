@@ -2,7 +2,8 @@
 from math import pi
 
 
-# List comprehension is a technique for creating sequences based in another sequence
+# Comprehension is a technique for creating sequences based in another sequence
+# Comprehensions can be applied to lists, sets, and dictionaries.
 def main():
     seq = range(11)
     print_list(seq)
