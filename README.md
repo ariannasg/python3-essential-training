@@ -48,7 +48,7 @@ Also shows how to manipulate data, build custom classes and functions, create li
 - Transforms: sorted, filter, map
 - Advanced Python functions: docstrings, variable argument lists, lambdas, keyword-only arguments
 - Advanced collections: namedtuple, defaultdict, Counter, OrderedDict, deque
-- Advanced classes and objects
+- Advanced classes and objects: enums, custom string and bytes representation of objects, computed attributes, support for numerical operations and support for comparisons 
 - Logging
 - Python comprehensions: list, dictionary, and set
 
