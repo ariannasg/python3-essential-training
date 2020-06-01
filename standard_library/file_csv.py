@@ -40,10 +40,8 @@ def writer_sample():
         csv_writer.writerow(["John Doe", "Accounting", "San Francisco CA"])
         csv_writer.writerow(["Jane Dae", "Engineering", "Seattle WA"])
         csv_writer.writerow(["Jim Due", "Human Resources", "New York NY"])
-        csv_writer.writerows([
-            ["Tim Smith", "Accounting", "San Francisco CA"],
-            ["Kate Williams", "Engineering", "Seattle WA"]
-        ])
+        csv_writer.writerows([["Tim Smith", "Accounting", "San Francisco CA"],
+                              ["Kate Williams", "Engineering", "Seattle WA"]])
 
 
 # Exercise the samples
