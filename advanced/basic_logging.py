@@ -30,3 +30,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CONSOLE OUTPUT (in the file):
+# DEBUG:root:This is a debug-level log message
+# INFO:root:This is an info-level log message
+# WARNING:root:This is a warning-level message
+# ERROR:root:This is an error-level message
+# CRITICAL:root:This is a critical-level message
+# INFO:root:Here's a string variable and an int: 10
