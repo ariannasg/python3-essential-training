@@ -9,7 +9,7 @@
 * [License](#license)
 
 ## Description
-Follow a series of courses to train and improve python skills.
+Follow a series of courses to train and improve Python skills.
 
 ## Python 3 - Essentials
 https://www.linkedin.com/learning/python-essential-training-2/
@@ -38,7 +38,7 @@ https://www.linkedin.com/learning/python-essential-training-2/
 The code for this codes lives on the [advanced folder](./advanced).
 
 This courses shows shows to leverage Python features such as object-oriented special class methods, using logging to track performance and user activity, how to port code from Python 2 to 3, and how to make the code more efficient and easier to read and maintain.
-also shows how to manipulate data, build custom classes and functions, create lists, and write more elegant, optimized code.
+Also shows how to manipulate data, build custom classes and functions, create lists, and write more elegant, optimized code.
 
 #### Objectives
 - Truth value testing
@@ -55,7 +55,8 @@ also shows how to manipulate data, build custom classes and functions, create li
 ## Local setup
 Follow the instructions to get the project up and running for local development and testing purposes.
 - Install python 3: https://www.python.org/downloads/. 
-- Configure the IDE Interpreter to use python 3 and setup the run configuration: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html?keymap=secondary_macos.
+- Configure the IDE Interpreter to use Python 3 and setup the run configuration: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html?keymap=secondary_macos.
+- Ideally create a dedicated virtual environment for the project and use it as the project interpreter in the IDE.
 
 ## License
 This project is licensed under the terms of the MIT License.
