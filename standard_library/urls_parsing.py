@@ -13,13 +13,11 @@ print('path:', result.path)
 print('port:', result.port)
 print('url:', result.geturl())
 
-
 # in order to use special chars (space,ñ) un a url we need to convert them
 # quote() replaces special characters for use in URLs
 sample_string = "Hello El Niño"
 print(urllib.parse.quote(sample_string))
 print(urllib.parse.quote_plus(sample_string))
-
 
 # how to convert dict of values into parameter strings for using in a URL as
 # part of the query string
@@ -31,7 +29,6 @@ query_data = {
 }
 result = urllib.parse.urlencode(query_data)
 print(result)
-
 
 # CONSOLE OUTPUT:
 # ParseResult(scheme='https', netloc='example.com:8080', path='/test.html', params='', query='val1=1&val2=Hello+World', fragment='')
