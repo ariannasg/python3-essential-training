@@ -72,7 +72,9 @@ See how the library can help to work with numbers, calculate and format dates an
 - Reading and writing CSV and ZIP files
 - Generating unique identifiers
 - Calculating dates and times
-- Retrieving internet data
+- Retrieving internet data using the urllib module
+- Parsing html 
+- Working with json using the json module
 
 ## Local setup
 Follow the instructions to get the project up and running for local development and testing purposes.
