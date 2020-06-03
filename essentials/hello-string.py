@@ -108,6 +108,16 @@ print(ascii(x))  # works just like repr but escaping chars
 print(ord('🖖'))  # the opposite of chr - gives the number of a character
 print(chr(128406))  # this function prints the character represented by that unicode precision
 
+
+def is_palindrome(word):
+    return word == word[::-1]
+
+
+print(is_palindrome('madam'))
+print(is_palindrome('you'))
+print('you'[-1:])
+print('you'[-1])
+
 # CONSOLE OUTPUT:
 # seven
 # z is <class 'str'>
@@ -166,3 +176,7 @@ print(chr(128406))  # this function prints the character represented by that uni
 # The number of bunnies is: 3 \U0001f596
 # 128406
 # 🖖
+# True
+# False
+# u
+# u
