@@ -6,6 +6,7 @@
 * [Python 3 Essentials](#python-3---essentials)
 * [Advanced Python](#advanced-python)
 * [Python Standard Library Essential Training](#python-standard-library-essential-training)
+* [Python Data Structures: Stacks, Queues, and Deques](#python-data-structures-stacks-queues-and-deques)
 * [Local setup](#local-setup)
 * [License](#license)
 
@@ -15,7 +16,7 @@ Follow a series of courses to train and improve Python skills.
 ## Python 3 - Essentials
 https://www.linkedin.com/learning/python-essential-training-2/
 
-The code for this codes lives on the [essentials folder](./essentials).
+The code for this course lives on the [essentials folder](./essentials).
 
 This course covers the basics of the language syntax and usage, as well as advanced features such as objects, generators, and exceptions. Learn how types and values are related to objects; how to use control statements, loops, and functions; and how to work with generators and decorators.
 
@@ -36,7 +37,7 @@ This course covers the basics of the language syntax and usage, as well as advan
 ## Advanced Python
 https://www.linkedin.com/learning/advanced-python/
 
-The code for this codes lives on the [advanced folder](./advanced).
+The code for this course lives on the [advanced folder](./advanced).
 
 This courses shows shows to leverage Python features such as object-oriented special class methods, using logging to track performance and user activity, how to port code from Python 2 to 3, and how to make the code more efficient and easier to read and maintain.
 Also shows how to manipulate data, build custom classes and functions, create lists, and write more elegant, optimized code.
@@ -56,7 +57,7 @@ Also shows how to manipulate data, build custom classes and functions, create li
 ## Python Standard Library Essential Training
 https://www.linkedin.com/learning/python-standard-library-essential-training/
 
-The code for this codes lives on the [standard_library folder](./standard_library).
+The code for this course lives on the [standard_library folder](./standard_library).
 
 Understand more about the library of pre-built code — known as the Python standard library — that’s distributed along with the language.
 See how the library can help to work with numbers, calculate and format dates and times, parse HTML, and more.
@@ -75,6 +76,24 @@ See how the library can help to work with numbers, calculate and format dates an
 - Retrieving internet data using the urllib module
 - Parsing html 
 - Working with json using the json module
+
+## Python Data Structures: Stacks, Queues, and Deques
+https://www.linkedin.com/learning/python-data-structures-stacks-queues-and-deques/
+
+The code for this course lives on the [data_structures folder](./data_structures).
+
+Learn how to use Python to build the top three linear data structures: stacks, queues, and deques.
+Learn how to define each class and use Python's built-in methods to accomplish the necessary behaviors, such as push, pop, and peek; enqueue and dequeue; and add_front and remove_rear. 
+
+#### Objectives
+- Abstract types and data structures
+- Stacks as a linear abstract data type
+- Creating the Stack class and its methods
+- Adding items to the top and bottom of a stack
+- Creating the Queue class and its methods
+- Manipulating items in a queue
+- Creating the Dequeue class and its methods
+- Adding and removing items from a dequeue
 
 ## Local setup
 Follow the instructions to get the project up and running for local development and testing purposes.
