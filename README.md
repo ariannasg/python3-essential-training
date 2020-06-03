@@ -34,7 +34,7 @@ This course covers the basics of the language syntax and usage, as well as advan
 - Integrating a database with Python db-api
 
 ## Advanced Python
-https://www.linkedin.com/learning/python-essential-training-2/
+https://www.linkedin.com/learning/advanced-python/
 
 The code for this codes lives on the [advanced folder](./advanced).
 
