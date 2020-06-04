@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 import random
 
-from data_structures.customqueue import CustomQueue
+from data_structures.custom_queue import CustomQueue
 
 
 # create three classes that, together, model how a printer could take print
