@@ -1,6 +1,5 @@
 #!usr/bin/env python3
 # working with HTML data via the HTMLParser
-from abc import ABC, ABCMeta
 from html.parser import HTMLParser
 
 metacount = 0

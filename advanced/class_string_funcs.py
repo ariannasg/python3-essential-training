@@ -36,6 +36,7 @@ def main():
     # use different Python functions to convert it to a string
     print(repr(cls1))
     print(str(cls1))
+    print(cls1)
     print("Formatted: {0}".format(cls1))
     print(bytes(cls1))
 
@@ -45,6 +46,7 @@ if __name__ == "__main__":
 
 # CONSOLE OUTPUT:
 # <Person Class - fname:Ari, lname:Gonzalez, age:29>
+# Person (Ari Gonzalez, 29)
 # Person (Ari Gonzalez, 29)
 # Formatted: Person (Ari Gonzalez, 29)
 # b'Person:Ari:Gonzalez:29'

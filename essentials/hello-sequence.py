@@ -10,6 +10,7 @@ for i in x:
 print('Lists operations')
 game = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 print(game[1])
+# slicing!! -> can be applied to strings
 print(game[1:5], end=' ', flush=True)  # works like range()
 print()
 print(game[1:5:2], end=' ', flush=True)  # works like range()
