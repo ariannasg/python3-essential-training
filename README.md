@@ -3,17 +3,17 @@
 # Python 3 Training
 
 * [Description](#description)
-* [Python 3 Essentials](#python-3---essentials)
-* [Advanced Python](#advanced-python)
-* [Python Standard Library Essential Training](#python-standard-library-essential-training)
-* [Python Data Structures: Stacks, Queues, and Deques](#python-data-structures-stacks-queues-and-deques)
+* [Python 3 Essentials - Course](#python-3-essentials---course)
+* [Advanced Python - Course](#advanced-python---course)
+* [Python Standard Library Essential Training - Course](#python-standard-library-essential-training---course)
+* [Python Data Structures: Stacks, Queues, and Deques - Course](#python-data-structures-stacks-queues-and-deques---course)
 * [Local setup](#local-setup)
 * [License](#license)
 
 ## Description
 Follow a series of courses to train and improve Python skills.
 
-## Python 3 - Essentials
+## Python 3 Essentials - Course
 https://www.linkedin.com/learning/python-essential-training-2/
 
 The code for this course lives on the [essentials folder](./essentials).
@@ -34,7 +34,7 @@ This course covers the basics of the language syntax and usage, as well as advan
 - Creating modules
 - Integrating a database with Python db-api
 
-## Advanced Python
+## Advanced Python - Course
 https://www.linkedin.com/learning/advanced-python/
 
 The code for this course lives on the [advanced folder](./advanced).
@@ -54,7 +54,7 @@ Also shows how to manipulate data, build custom classes and functions, create li
 - Logging
 - Python comprehensions: list, dictionary, and set
 
-## Python Standard Library Essential Training
+## Python Standard Library Essential Training - Course
 https://www.linkedin.com/learning/python-standard-library-essential-training/
 
 The code for this course lives on the [standard_library folder](./standard_library).
@@ -77,7 +77,7 @@ See how the library can help to work with numbers, calculate and format dates an
 - Parsing html 
 - Working with json using the json module
 
-## Python Data Structures: Stacks, Queues, and Deques
+## Python Data Structures: Stacks, Queues, and Deques - Course
 https://www.linkedin.com/learning/python-data-structures-stacks-queues-and-deques/
 
 The code for this course lives on the [data_structures folder](./data_structures).
