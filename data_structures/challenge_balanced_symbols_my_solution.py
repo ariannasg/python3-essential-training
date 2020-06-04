@@ -17,6 +17,20 @@ allowed_symbols = {'(': ')',
 
 
 def is_balanced(symbols):
+    """
+    >>> is_balanced('([{}])')
+    True
+    >>> is_balanced('([]{}())')
+    True
+    >>> is_balanced('((()))')
+    True
+    >>> is_balanced('(([{])')
+    False
+    >>> is_balanced('[}([){]')
+    False
+    >>> is_balanced('[')
+    False
+    """
     if not isinstance(symbols, str):
         raise TypeError('symbols must be a string')
 
@@ -40,9 +54,7 @@ def is_balanced(symbols):
     return False
 
 
-assert is_balanced('([{}])') is True
-assert is_balanced('([]{}())') is True
-assert is_balanced('((()))') is True
-assert is_balanced('(([{])') is False
-assert is_balanced('[}([){]') is False
-assert is_balanced('[') is False
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod()

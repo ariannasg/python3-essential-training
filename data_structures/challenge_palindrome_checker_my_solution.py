@@ -11,6 +11,20 @@ from data_structures.custom_deque import Deque
 
 
 def is_palindrome(word):
+    """
+    >>> is_palindrome('mom')
+    True
+    >>> is_palindrome('level')
+    True
+    >>> is_palindrome('kayak')
+    True
+    >>> is_palindrome('school')
+    False
+    >>> is_palindrome('night')
+    False
+    >>> is_palindrome('book')
+    False
+    """
     if not isinstance(word, str):
         raise TypeError('word must be a string')
 
@@ -27,9 +41,7 @@ def is_palindrome(word):
         return False
 
 
-assert is_palindrome('mom') is True
-assert is_palindrome('level') is True
-assert is_palindrome('kayak') is True
-assert is_palindrome('school') is False
-assert is_palindrome('night') is False
-assert is_palindrome('book') is False
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod()
