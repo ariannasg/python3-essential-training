@@ -2,3 +2,4 @@
 essentials/lines-copy.txt
 essentials/berlin-copy.jpg
 essentials/db-api.db
+*.pyc
