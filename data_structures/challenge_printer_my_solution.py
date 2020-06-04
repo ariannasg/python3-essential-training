@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 import random
 
-from data_structures.queue import Queue
+from data_structures.customqueue import CustomQueue
 
 
 # create three classes that, together, model how a printer could take print
@@ -17,7 +17,7 @@ from data_structures.queue import Queue
 # have a "get_job" method that makes use of the queues built-in dequeue
 # method to take the first job in the PrintQueue off of the queue.
 
-class PrintQueue(Queue):
+class PrintQueue(CustomQueue):
     def __init__(self):
         super().__init__()
 

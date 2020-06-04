@@ -1,13 +1,13 @@
 #!usr/bin/env python3
 
 
-class Queue:
+class CustomQueue:
     def __init__(self):
         self.items = []
 
     def enqueue(self, item):
         """Takes in an item and inserts that item into the 0th index
-        of the list that is representing the Queue.
+        of the list that is representing the CustomQueue.
 
         The runtime is O(n), or linear time, because inserting into the 0th
         index of a list forces all the other items in the list to move
@@ -16,7 +16,7 @@ class Queue:
         self.items.insert(0, item)
 
     def dequeue(self):
-        """Returns and removes the front-most item of the Queue, which is
+        """Returns and removes the front-most item of the CustomQueue, which is
         represented by the last item in the list.
 
         The runtime is O(1), or constant time, because indexing to the
@@ -28,7 +28,7 @@ class Queue:
 
     def peek(self):
         """Returns the last item in the list. which represents the
-        front-most item in the Queue.
+        front-most item in the CustomQueue.
 
         The runtime is constant because we're just indexing to the
         last item of the list and returning the value found there.
@@ -39,7 +39,7 @@ class Queue:
         return None
 
     def size(self):
-        """Returns the size of the Queue, which is represent by the length of
+        """Returns the size of the CustomQueue, which is represent by the length of
         the list.
 
         The runtime is O(1), or constant time, because we're only
@@ -48,7 +48,7 @@ class Queue:
 
     def is_empty(self):
         """Returns a Boolean value expressing whether or not the list
-        representing the Queue is empty.
+        representing the CustomQueue is empty.
 
         Runs in constant time, because it's only checking for equality.
         """
