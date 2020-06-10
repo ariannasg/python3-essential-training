@@ -30,3 +30,27 @@ def simple_context_manager(obj):
         yield
     finally:  # wrap up statement
         obj.some_property -= 1
+
+
+class SomeObj:
+    def __init__(self, value):
+        self.some_property = value
+
+
+def main():
+    obj = SomeObj(5)
+    print(obj.some_property)
+
+    with simple_context_manager(obj):
+        print(obj.some_property)
+
+    print(obj.some_property)
+
+
+if __name__ == '__main__':
+    main()
+
+# CONSOLE OUTPUT:
+# 5
+# 6
+# 5
