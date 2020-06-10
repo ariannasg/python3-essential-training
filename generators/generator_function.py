@@ -11,7 +11,7 @@ def even_integers_generator(n):
 
 
 def main():
-    print(type(even_integers_generator(8)))
+    print(even_integers_generator(8))
     print(list(even_integers_generator(8)))
 
 
@@ -19,5 +19,5 @@ if __name__ == '__main__':
     main()
 
 # CONSOLE OUTPUT:
-# <class 'generator'>
+# <generator object even_integers_generator at 0x10da68580>
 # [0, 2, 4, 6]
