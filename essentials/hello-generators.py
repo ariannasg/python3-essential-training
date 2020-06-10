@@ -1,7 +1,10 @@
 #!usr/bin/env python3
 
 
-# A generator function serves as an iterator, instead of returning a single value, returns a stream of values
+# A generator function serves as an iterator, instead of returning a single
+# value, returns a stream of values.
+# A generator object is an iterator, but not all iterators are generator
+# objects.
 def main():
     for i in inclusive_range(25):
         print(i, end=' ')

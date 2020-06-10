@@ -16,6 +16,13 @@
 # what time it is until it is triggered to do so which is what we call lazy
 # evaluation. There is no need to store a large number of tickets, so it is
 # space efficient.
+# While regular containers like lists and tuples are a set of data stored in
+# memory, iterators are objects that support a method called next() which
+# grabs items one at a time. The next() method would be analogous to the
+# button you press on the ticket machine at the DMV. Most iterables such as
+# lists or tuples have an iter() method that returns an iterator. When using a
+# for loop or list comprehension in Python, behind the scenes the interpreter
+# grabs the iterator and calls next() on it in order to iterate over it.
 class InclusiveRange:
     def __init__(self, *args):
         num_args = len(args)
