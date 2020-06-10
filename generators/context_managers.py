@@ -8,7 +8,7 @@ from contextlib import contextmanager
 # letting them play and then tearing down everything, packing instruments, etc.
 #  Not all Python objects can act as a context manager. For a Python object to
 #  be able to act as a context manager, it must implement the methods
-#  "enter" and "exit." For example an open file object do implement these.
+#  "enter" and "exit" For example an open file object do implement these.
 # There are 3 steps that a context manager takes: Setting up a context,
 # giving control back to the caller, and wrapping up once the color is done.
 # We can achieve these steps by also using a generator to produce a context
@@ -16,6 +16,9 @@ from contextlib import contextmanager
 # "finally."
 # Context managers allow easy execution of setup code and wrap-up code with
 # the help of Python generators and the context manager decorator.
+# The decorator is what actually adds the  "enter" and "exit" methods that
+# allows the context manager to work, without it, calling the example we have
+# in main(), would throw "AttributeError: __enter__"
 
 @contextmanager
 def simple_context_manager(obj):
