@@ -7,6 +7,7 @@
 * [Advanced Python - Course](#advanced-python---course)
 * [Python Standard Library Essential Training - Course](#python-standard-library-essential-training---course)
 * [Python Data Structures: Stacks, Queues, and Deques - Course](#python-data-structures-stacks-queues-and-deques---course)
+* [Python Generators - Course](#python-generators---course)
 * [Local setup](#local-setup)
 * [License](#license)
 
