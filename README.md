@@ -95,6 +95,18 @@ Learn how to define each class and use Python's built-in methods to accomplish t
 - Creating the Dequeue class and its methods
 - Adding and removing items from a dequeue
 
+## Python Generators - Course
+https://www.linkedin.com/learning/learning-python-generators/
+
+The code for this course lives on the [generators folder](./generators).
+
+Learn about using generators as a way to iterate through large and complex data sets.
+
+#### Objectives
+- How to build a basic generator function
+- Use generator expressions and objects
+- How generators work behind the scenes to power context managers and coroutines
+
 ## Local setup
 Follow the instructions to get the project up and running for local development and testing purposes.
 - Install python 3: https://www.python.org/downloads/. 
