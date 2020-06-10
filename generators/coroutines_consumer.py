@@ -1,18 +1,10 @@
 #!usr/bin/env python3
+from generators.coroutine_decorator import coroutine_decorator
 
 
 # Coroutines are used to consume values, but they need a producer that will
 # send it values to consume.
 # The initial producer is not going to be a coroutine.
-def coroutine_decorator(func):
-    def wrapper(*args, **kwargs):
-        cr = func(*args, **kwargs)
-        cr.__next__()
-        return cr
-
-    return wrapper
-
-
 @coroutine_decorator
 def match_counter(string):
     count = 0
