@@ -1,6 +1,21 @@
 #!/usr/bin/env python3
 
 
+# To understand what iterators are, imagine when you go to the Department of
+# Motor Vehicles, and you have to grab a ticket from the ticket machine.
+# They could just print out a stack of all the numbers they will ever need,
+# but since they don't know how many they will need, it makes more sense to
+# print out just one at a time. Of course, it has to remember which number
+# it printed out last so that it can stay in order. It wouldn't do any good
+# to print the same number out every time. If you wanted to have a current
+# timestamp on it, then it is essential that the machine waits until you press
+# the button before it prints it. This illustrates a few important concepts
+# of iterators. It maintains a state of what number it's on so that it can
+# print numbers in the proper sequence. It doesn't know how many it will
+# print. It just knows the next number it needs to print. It doesn't evaluate
+# what time it is until it is triggered to do so which is what we call lazy
+# evaluation. There is no need to store a large number of tickets, so it is
+# space efficient.
 class InclusiveRange:
     def __init__(self, *args):
         num_args = len(args)
